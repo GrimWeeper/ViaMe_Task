@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+        <title>Login form</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        
+    <body>
+		<form class="login-box">
+			<h1>Please Login</h1>
+			
+		    <div class="login">
+				<input class="textbox" type="text" placeholder="username" name="userid"><br>
+				<input class="textbox" type="password" placeholder="password" name="pswrd"><br>
+				<input class="btn" type="button" onclick="check(this.form)" value="Login"/>
+			</div>
+		
+		</form>
+		<script language="javascript">
+			function check(form)
+			{
+				if(form.userid.value == "fatima" && form.pswrd.value == "123")
+				{
+					window.open('todolist.html')
+				}
+				else
+				{
+					alert("The username and password you entered don't match.")
+				}
+			
+			}
+		</script>
+			
+    </body>
+	
+</html>
